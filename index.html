@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FanEats - Stadium Food & Drinks Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">FanEats</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order">Order Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-link">
+                <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to FanEats</h1>
+            <p>Order your favorite food and drinks delivered right to your seat!</p>
+            <button onclick="scrollToSection('menu')">Explore Menu</button>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item" data-item="Hot Dogs" data-price="5">
+                    <img src="images/hotdog.jpg" alt="Hot Dogs">
+                    <h3>Hot Dogs</h3>
+                    <p>Classic stadium hot dogs with all your favorite toppings.</p>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-item="Burgers" data-price="8">
+                    <img src="images/burger.jpg" alt="Burgers">
+                    <h3>Burgers</h3>
+                    <p>Juicy burgers grilled to perfection, available with various toppings.</p>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-item="Nachos" data-price="6">
+                    <img src="images/nachos.jpg" alt="Nachos">
+                    <h3>Nachos</h3>
+                    <p>Cheesy nachos with jalapeños, salsa, and guacamole.</p>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-item="Soft Drinks" data-price="3">
+                    <img src="images/softdrinks.jpg" alt="Soft Drinks">
+                    <h3>Soft Drinks</h3>
+                    <p>Choose from a variety of soft drinks to quench your thirst.</p>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-item="Beer" data-price="7">
+                    <img src="images/beer.jpg" alt="Beer">
+                    <h3>Beer</h3>
+                    <p>Selection of local and international beers.</p>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order-section">
+        <div class="container">
+            <h2>Order Now</h2>
+            <form id="order-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="seat">Seat Number:</label>
+                <input type="text" id="seat" name="seat" required>
+                <label for="food">Food & Drinks:</label>
+                <textarea id="food" name="food" required></textarea>
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us!</p>
+            <p>Email: support@faneats.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+    </section>
+
+    <aside id="cart" class="cart-section">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FanEats. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

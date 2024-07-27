@@ -1,0 +1,247 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e31837;
+}
+
+.cart-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.cart-link a:hover {
+    color: #e31837;
+}
+
+.hero {
+    background: url('images/stadium.jpg') no-repeat center center/cover;
+    color: navy;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 0 0 30px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #e31837;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #c21632;
+}
+
+.menu-section, .order-section, .contact-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu-section h2, .order-section h2, .contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #e31837;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item button {
+    padding: 10px 20px;
+    background-color: #e31837;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-item button:hover {
+    background-color: #c21632;
+}
+
+.order-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.order-section label {
+    margin-top: 15px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.order-section input, .order-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-section button {
+    padding: 15px 30px;
+    background-color: #e31837;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-section button:hover {
+    background-color: #c21632;
+}
+
+.cart-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cart-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #e31837;
+}
+
+.cart-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cart-section ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-section p {
+    margin: 20px 0;
+}
+
+.cart-section button {
+    padding: 15px 30px;
+    background-color: #e31837;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart-section button:hover {
+    background-color: #c21632;
+}
+
+.contact-section p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
